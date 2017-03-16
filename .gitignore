@@ -2,3 +2,12 @@ autom4te.cache
 glog-*.tar.gz
 packages/rpm-unknown
 packages/debian-*
+/Debug
+/ipch
+/vsprojects/logging_unittest_static/Debug
+/vsprojects/logging_unittest/Debug
+/vsprojects/libglog_static/Debug
+/vsprojects/libglog/Debug
+/*.suo
+/*.sdf
+/*.XML
