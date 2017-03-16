@@ -11,3 +11,9 @@ packages/debian-*
 /*.suo
 /*.sdf
 /*.XML
+/*.opensdf
+/Release
+/vsprojects/libglog/Release
+/vsprojects/libglog_static/Release
+/vsprojects/logging_unittest/Release
+/vsprojects/logging_unittest_static/Release
