@@ -13,6 +13,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9B239B45-84A9-4E06-AC46-8E220CD43974}</ProjectGuid>
     <RootNamespace>logging_unittest_static</RootNamespace>
+    <ProjectName>logging_unittest_static</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -63,6 +64,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>..\..\$(Configuration)\libglog_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -81,6 +83,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>..\..\$(Configuration)\libglog_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -88,12 +91,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\logging_unittest.cc" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\libglog_static\libglog_static.vcxproj">
-      <Project>{772c2111-bbbf-49e6-b912-198a7f7a88e5}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
