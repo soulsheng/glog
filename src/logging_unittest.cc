@@ -192,6 +192,14 @@ int main(int argc, char **argv) {
 
   InitGoogleLogging(argv[0]);
 
+  SetLogDestination(google::GLOG_INFO, argv[0]);
+  SetLogDestination(google::GLOG_ERROR, "");
+  SetLogDestination(google::GLOG_WARNING, "");
+  google::SetLogFilenameExtension(".log");
+
+  string logFilename = string(argv[0]) + ".log";
+  unlink(logFilename.c_str());
+
   RunSpecifiedBenchmarks();
 
   FLAGS_logtostderr = true;
