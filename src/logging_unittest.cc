@@ -200,6 +200,12 @@ int main(int argc, char **argv) {
   string logFilename = string(argv[0]) + ".log";
   unlink(logFilename.c_str());
 
+
+  FLAGS_v = 1;
+  FLAGS_logtostderr = false;
+
+  VLOG(1) << "test message";
+
   RunSpecifiedBenchmarks();
 
   FLAGS_logtostderr = true;
