@@ -25,3 +25,17 @@ packages/debian-*
 /build-x32-vc12/libglog_static/Debug
 /build-x32-vc12/libglog/Release
 /build-x32-vc12/libglog/Debug
+/build-x64-vc12/CMakeFiles
+/build-x64-vc12/*.cmake
+/build-x64-vc12/*.sdf
+/build-x64-vc12/*.opensdf
+/build-x64-vc12/glog.dir
+/build-x64-vc12/x64
+/build-x64-vc12/Debug
+/build-x64-vc12/*.suo
+/build-x64-vc12/Release
+/build-x32-vc12/libglog/*.sdf
+/build-x32-vc12/libglog/*.opensdf
+/build-x64-vc12
+/build-x32-vc12/libglog/x64
+/build-x32-vc12/libglog/*.suo
